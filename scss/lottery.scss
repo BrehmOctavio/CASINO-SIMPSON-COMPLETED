@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .header{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+
+        .back{
+            height: 3rem;
+            width: auto;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .section{
+        height: 700px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .article{
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .div-lottery{
+                height: auto;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                flex-direction: column;
+
+                .image-lottery{
+                    height: 12rem;
+                    width: auto;
+                }
+
+                .title{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                    color: rgb(0, 0, 0);
+                }
+
+                .form{
+                    height: auto;
+                    width: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .input-number{
+                        height: 2.5rem;
+                        width: 20rem;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 2px solid rgb(74, 74, 74);
+                        margin: 3rem;
+    
+                        &::placeholder{
+                            font-size: 0.9rem;
+                            font-weight: lighter;
+                            font-family: sans-serif;
+                            color: rgb(74, 74, 74);
+                            padding-left: 1rem;
+                        }
+                    }
+
+                    .go{
+                        height: 2rem;
+                        width: 6rem;
+                        border-radius: 10px;
+                        border: none;
+                        font-size: 0.9rem;
+                        font-weight: lighter;
+                        font-family: sans-serif;
+                        color: white;
+                        background-color: rgb(161, 20, 255);
+                        transition: all 0.2s;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgb(196, 106, 255);
+                        }
+                    }
+                }
+
+                .result{
+                    border: 2px solid rgb(196, 106, 255);
+                    border-radius: 30px;
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                    font-style: italic;
+                    padding: 0.5rem;
+                    color: rgb(196, 106, 255);
+                    margin-top: 2rem;
+                    display: none;
+                }
+            }
+        }
+    }
+}

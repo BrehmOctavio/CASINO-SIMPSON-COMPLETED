@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+@mixin display {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html{
+    background-color: rgb(20, 20, 20);
+}
+
+.body, .section{
+    @include display;
+    height: 600px;
+
+    .article-1{
+        @include display;
+        justify-content: space-between;
+        padding-left: 20rem;
+        padding-right: 20rem;
+
+        .div-name{
+            @include display;
+        
+            .form{
+                @include display;
+                align-items: flex-start;
+                flex-direction: column;
+        
+                .name{
+                    width: 100%;
+                    text-align: start;
+                    font-size: 3rem;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                    color: rgb(255, 187, 15);
+                }
+        
+                .input-name{
+                    height: 2rem;
+                    width: 50%;
+                    border: none;
+                    border-bottom: 1px solid rgb(255, 187, 15);
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                    color: rgb(255, 255, 255);
+                    background-color: transparent;
+                }
+
+                .next{
+                    height: 2rem;
+                    width: 8rem;
+                    background-color: rgb(255, 187, 15);
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                    color: rgb(255, 255, 255);
+                    margin-top: 2rem;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .background{
+            height: 20rem;
+            width: auto;
+        }
+    } 
+}

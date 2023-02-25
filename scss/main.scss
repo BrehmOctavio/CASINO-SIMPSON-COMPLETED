@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(21, 21, 21);
+    transition: all 0.2s;
+
+    .header{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .title{
+            font-size: 2.5rem;
+            font-weight: bolder;
+            font-family: sans-serif;
+            font-style: italic;
+            color: rgb(255, 174, 0);
+            text-shadow: 0px 2px 0px rgb(255, 255, 255);
+            border-radius: 20px;
+            border: 2px dashed rgb(255, 174, 0);
+            padding: 1rem;
+            transition: all 0.2s;
+        }
+
+        .toggle-dark, .toggle-light{
+            height: 4rem;
+            width: auto;
+        }
+
+        .toggle-dark{
+            display: none;
+        }
+
+        .toggle-dark, .toggle-light:hover{
+            cursor: pointer;
+        }
+    }
+
+    .welcome{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+        font-style: italic;
+        color: rgb(255, 255, 255);
+        transition: all 0.2s;
+    }
+
+    .section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .article-1{
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .all-games{
+                height: auto;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-left: 10rem;
+                padding-right: 10rem;
+
+                .div-card{
+                    height: auto;
+                    width: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 3rem;
+
+                    .image-card{
+                        height: 20rem;
+                        width: 20rem;
+                        border-radius: 2rem;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+
+                    .title-card{
+                        font-size: 1rem;
+                        font-weight: lighter;
+                        font-family: sans-serif;
+                        color: rgb(255, 255, 255);
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+}

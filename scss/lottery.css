@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.body .header {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.body .header .back {
+  height: 3rem;
+  width: auto;
+}
+.body .header .back:hover {
+  cursor: pointer;
+}
+.body .section {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body .section .article {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body .section .article .div-lottery {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: column;
+}
+.body .section .article .div-lottery .image-lottery {
+  height: 12rem;
+  width: auto;
+}
+.body .section .article .div-lottery .title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+}
+.body .section .article .div-lottery .form {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.body .section .article .div-lottery .form .input-number {
+  height: 2.5rem;
+  width: 20rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(74, 74, 74);
+  margin: 3rem;
+}
+.body .section .article .div-lottery .form .input-number::-moz-placeholder {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: rgb(74, 74, 74);
+  padding-left: 1rem;
+}
+.body .section .article .div-lottery .form .input-number:-ms-input-placeholder {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: rgb(74, 74, 74);
+  padding-left: 1rem;
+}
+.body .section .article .div-lottery .form .input-number::placeholder {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: rgb(74, 74, 74);
+  padding-left: 1rem;
+}
+.body .section .article .div-lottery .form .go {
+  height: 2rem;
+  width: 6rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: white;
+  background-color: rgb(161, 20, 255);
+  transition: all 0.2s;
+}
+.body .section .article .div-lottery .form .go:hover {
+  cursor: pointer;
+  background-color: rgb(196, 106, 255);
+}
+.body .section .article .div-lottery .result {
+  border: 2px solid rgb(196, 106, 255);
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-style: italic;
+  padding: 0.5rem;
+  color: rgb(196, 106, 255);
+  margin-top: 2rem;
+  display: none;
+}/*# sourceMappingURL=lottery.css.map */
